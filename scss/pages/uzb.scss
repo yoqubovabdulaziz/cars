@@ -1,0 +1,58 @@
+@use "../global";
+@use "../utils/variables" as var;
+
+#hero{
+    padding: 110px 0 50px;
+    background-color: var.$primary-black;
+}
+
+.hero{
+    &__all{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 35px;
+        flex-direction: column;
+    }
+    &__left{
+        p{
+            font-size: 18px;
+            $primary-font: Poppins500;
+            color: white;
+            padding-bottom: 40px;
+            max-width: 500px;
+            line-height: 30px;
+        }
+        a{
+            padding: 12px;
+            color: white;
+            border: 3px solid var.$bck-blue;
+            background-color: var.$bck-blue;
+            border-radius: 25px;
+            transition: 0.5s;
+            font-size: 18px;
+        }
+        a:hover{
+            background-color: transparent;
+            color: var.$bck-blue;
+        }
+    }
+    &__right{
+        img{
+            width: 100%;
+        }
+    }
+}
+
+@media (min-width: 600px){
+    .hero{
+        &__all{
+            display: flex;
+        align-items: center;
+        flex-direction: row;
+        }
+        &__left{
+            width: 50%;
+        }
+    }
+}
