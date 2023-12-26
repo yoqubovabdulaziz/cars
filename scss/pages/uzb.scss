@@ -15,9 +15,14 @@
         flex-direction: column;
     }
     &__left{
+        h1{
+            color: var.$bck-blue;
+            padding-bottom: 10px;
+            font-size: 30px;
+            text-shadow: 0px 0px 4px rgb(255, 255, 255);
+        }
         p{
             font-size: 18px;
-            $primary-font: Poppins500;
             color: white;
             padding-bottom: 40px;
             max-width: 500px;
@@ -40,6 +45,26 @@
     &__right{
         img{
             width: 100%;
+        }
+    }
+}
+
+.item img{
+    height: 300px;
+    border-radius: 50px;
+}
+
+#photo{
+    padding-top: 50px;
+}
+
+.photo{
+    &__top{
+        h1{
+            text-align: center;
+            padding-bottom: 30px;
+            font-size: 35px;
+            color: var.$primary-black;
         }
     }
 }
