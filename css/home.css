@@ -232,3 +232,20 @@ button {
   font-family: Poppins500;
   font-size: 18px;
 }
+
+.hero {
+  padding: 170px 20px 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.hero__left h1 {
+  max-width: 600px;
+  font-size: 55px;
+}
+.hero__right img {
+  width: 650px;
+}

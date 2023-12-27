@@ -1,1 +1,18 @@
 @use "../global";
+
+.hero {
+  padding: 170px 20px 90px;
+  display: flex;
+  justify-content: space-between;
+  &__left {
+    h1 {
+      max-width: 600px;
+      font-size: 55px;
+    }
+  }
+  &__right {
+    img {
+      width: 650px;
+    }
+  }
+}
